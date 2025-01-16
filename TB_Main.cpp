@@ -137,7 +137,7 @@ void Ruangan() {
     glScalef(roomScaleX, roomScaleY, roomScaleZ);
     glutSolidCube(1.0f);
     
-    glColor3f(1.0f, 1.0f, 1.0f);
+    glColor3f(0.0f, 0.0f, 0.0f);
     glutWireCube(0.99f);
     glPopMatrix();
 }
