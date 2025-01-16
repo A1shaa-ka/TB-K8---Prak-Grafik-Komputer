@@ -169,6 +169,22 @@ void Furniture() {
     glPopMatrix();
 }
 
+void Laptop() {
+    glPushMatrix();
+    glColor3f(0.2f, 0.2f, 0.3f); // Warna bodi laptop
+    glTranslatef(0.0f, -2.92f, 0.3f); // Posisi laptop di atas meja
+    glScalef(0.7f, 0.06f, 0.4f);   // Skala bodi laptop
+    glutSolidCube(1.0f);           // Gambar bodi laptop
+    glPopMatrix();
+
+    glPushMatrix();
+    glColor3f(0.2f, 0.2f, 0.3f); // Warna layar laptop
+    glTranslatef(0.0f, -2.69f, 0.1f); // Posisi layar laptop
+    glScalef(0.7f, 0.57f, 0.06f);   // Skala layar laptop
+    glutSolidCube(1.0f);           // Gambar layar laptop
+    glPopMatrix();
+}
+
 void mySpecialKeys(int key, int x, int y)
 {
 switch (key)
@@ -283,21 +299,6 @@ void myKeyboard(unsigned char key, int x, int y) {
     glutPostRedisplay();
 }
 
-void Laptop() {
-    glPushMatrix();
-    glColor3f(0.2f, 0.2f, 0.3f); // Warna bodi laptop
-    glTranslatef(0.0f, -2.92f, 0.3f); // Posisi laptop di atas meja
-    glScalef(0.7f, 0.06f, 0.4f);   // Skala bodi laptop
-    glutSolidCube(1.0f);           // Gambar bodi laptop
-    glPopMatrix();
-
-    glPushMatrix();
-    glColor3f(0.2f, 0.2f, 0.3f); // Warna layar laptop
-    glTranslatef(0.0f, -2.69f, 0.1f); // Posisi layar laptop
-    glScalef(0.7f, 0.57f, 0.06f);   // Skala layar laptop
-    glutSolidCube(1.0f);           // Gambar layar laptop
-    glPopMatrix();
-}
 
 int main(int argc, char **argv) {
     glutInit(&argc, argv);
